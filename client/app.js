@@ -1,7 +1,14 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import Routes from './routes';
 
-ReactDOM.render(
-    <div>Hello, world!</div>,
-    document.getElementById('app') // make sure this is the same as the id of the div in your index.html
+
+const App = () => {
+  console.log('INSIDE APP');
+  return (
+    <div>
+      <Routes />
+    </div>
   );
+};
+
+export default App;
